@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
-use Illuminate\Support\Traits\Macroable;
+use Sirius\Support\Traits\Macroable;
 
 class Str
 {

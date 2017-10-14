@@ -1,12 +1,12 @@
 <?php
 
-use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
-use Illuminate\Support\Optional;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Debug\Dumper;
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\HigherOrderTapProxy;
+use Sirius\Support\Arr;
+use Sirius\Support\Str;
+use Sirius\Support\Optional;
+use Sirius\Support\Collection;
+use Sirius\Support\Debug\Dumper;
+use Sirius\Support\Contracts\Htmlable;
+use Sirius\Support\HigherOrderTapProxy;
 
 if (! function_exists('append_config')) {
     /**
@@ -416,7 +416,7 @@ if (! function_exists('collect')) {
      * Create a collection from the given value.
      *
      * @param  mixed  $value
-     * @return \Illuminate\Support\Collection
+     * @return \Sirius\Support\Collection
      */
     function collect($value = null)
     {
@@ -565,7 +565,7 @@ if (! function_exists('e')) {
     /**
      * Escape HTML special characters in a string.
      *
-     * @param  \Illuminate\Contracts\Support\Htmlable|string  $value
+     * @param  \Sirius\Support\Contracts\Htmlable|string  $value
      * @return string
      */
     function e($value)

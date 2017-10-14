@@ -1,11 +1,11 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 use ArrayAccess;
 use JsonSerializable;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Contracts\Support\Arrayable;
+use Sirius\Support\Contracts\Jsonable;
+use Sirius\Support\Contracts\Arrayable;
 
 class Fluent implements ArrayAccess, Arrayable, Jsonable, JsonSerializable
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 use Countable;
 use JsonSerializable;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\MessageProvider;
-use Illuminate\Contracts\Support\MessageBag as MessageBagContract;
+use Sirius\Support\Contracts\Jsonable;
+use Sirius\Support\Contracts\Arrayable;
+use Sirius\Support\Contracts\MessageProvider;
+use Sirius\Support\Contracts\MessageBag as MessageBagContract;
 
 class MessageBag implements Arrayable, Countable, Jsonable, JsonSerializable, MessageBagContract, MessageProvider
 {
@@ -82,7 +82,7 @@ class MessageBag implements Arrayable, Countable, Jsonable, JsonSerializable, Me
     /**
      * Merge a new array of messages into the bag.
      *
-     * @param  \Illuminate\Contracts\Support\MessageProvider|array  $messages
+     * @param  \Sirius\Support\Contracts\MessageProvider|array  $messages
      * @return $this
      */
     public function merge($messages)
@@ -282,7 +282,7 @@ class MessageBag implements Arrayable, Countable, Jsonable, JsonSerializable, Me
     /**
      * Get the messages for the instance.
      *
-     * @return \Illuminate\Support\MessageBag
+     * @return \Sirius\Support\MessageBag
      */
     public function getMessageBag()
     {
@@ -303,7 +303,7 @@ class MessageBag implements Arrayable, Countable, Jsonable, JsonSerializable, Me
      * Set the default message format.
      *
      * @param  string  $format
-     * @return \Illuminate\Support\MessageBag
+     * @return \Sirius\Support\MessageBag
      */
     public function setFormat($format = ':message')
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 use ArrayAccess;
 use InvalidArgumentException;
-use Illuminate\Support\Traits\Macroable;
+use Sirius\Support\Traits\Macroable;
 
 class Arr
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
-use Illuminate\Contracts\Support\Htmlable;
+use Sirius\Support\Contracts\Htmlable;
 
 class HtmlString implements Htmlable
 {

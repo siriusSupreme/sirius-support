@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
-use Illuminate\Filesystem\Filesystem;
+use Support\Filesystem\Filesystem;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\ProcessUtils;
 use Symfony\Component\Process\PhpExecutableFinder;
@@ -12,7 +12,7 @@ class Composer
     /**
      * The filesystem instance.
      *
-     * @var \Illuminate\Filesystem\Filesystem
+     * @var \Sirius\Filesystem\Filesystem
      */
     protected $files;
 
@@ -26,7 +26,7 @@ class Composer
     /**
      * Create a new Composer manager instance.
      *
-     * @param  \Illuminate\Filesystem\Filesystem  $files
+     * @param  \Sirius\Filesystem\Filesystem  $files
      * @param  string|null  $workingPath
      * @return void
      */

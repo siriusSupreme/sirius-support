@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 class NamespacedItemResolver
 {

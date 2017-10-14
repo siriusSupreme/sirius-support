@@ -1,0 +1,74 @@
+{
+  "name": "siriussupreme/sirius-support",
+  "description": "数组、字符串、集合等处理工具",
+  "type": "library",
+  "keywords": [ ],
+  "homepage": "https://github.com/siriusSupreme/sirius-support",
+  "license": [
+    "MIT"
+  ],
+  "authors": [
+    {
+      "name": "siriusSupreme",
+      "email": "guoplc@163.com",
+      "homepage": "https://github.com/siriusSupreme/sirius-support",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "symfony/var-dumper": "^3.3",
+    "nesbot/carbon": "^1.22",
+    "symfony/process": "^3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sirius\\Support\\": "src/"
+    },
+    "classmap": [],
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {},
+    "classmap": []
+  },
+  "suggest": {},
+  "extra": {},
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "scripts": {
+    "pre-install-cmd": [],
+    "post-install-cmd": [],
+    "pre-update-cmd": [],
+    "post-update-cmd": [],
+    "pre-status-cmd": [],
+    "post-status-cmd": [],
+    "pre-package-install": [],
+    "post-package-install": [],
+    "pre-package-update": [],
+    "post-package-update": [],
+    "pre-package-uninstall": [],
+    "post-package-uninstall": [],
+    "pre-autoload-dump": [],
+    "post-autoload-dump": [],
+    "post-root-package-install": [],
+    "post-create-project-cmd": []
+  },
+  "archive": {
+    "exclude": []
+  }
+}

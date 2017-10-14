@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 use Doctrine\Common\Inflector\Inflector;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 use stdClass;
 use Countable;
@@ -11,10 +11,10 @@ use ArrayIterator;
 use CachingIterator;
 use JsonSerializable;
 use IteratorAggregate;
-use Illuminate\Support\Debug\Dumper;
-use Illuminate\Support\Traits\Macroable;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Contracts\Support\Arrayable;
+use Sirius\Support\Debug\Dumper;
+use Sirius\Support\Traits\Macroable;
+use Sirius\Support\Contracts\Jsonable;
+use Sirius\Support\Contracts\Arrayable;
 
 class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate, Jsonable, JsonSerializable
 {
@@ -1646,7 +1646,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     /**
      * Get a base Support collection instance from this collection.
      *
-     * @return \Illuminate\Support\Collection
+     * @return \Sirius\Support\Collection
      */
     public function toBase()
     {

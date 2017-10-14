@@ -1,10 +1,10 @@
 <?php
 
-namespace Illuminate\Support;
+namespace Sirius\Support;
 
 use JsonSerializable;
 use Carbon\Carbon as BaseCarbon;
-use Illuminate\Support\Traits\Macroable;
+use Sirius\Support\Traits\Macroable;
 
 class Carbon extends BaseCarbon implements JsonSerializable
 {
