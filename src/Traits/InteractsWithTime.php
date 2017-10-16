@@ -1,9 +1,10 @@
 <?php
 
-namespace Sirius\Support;
+namespace Sirius\Support\Traits;
 
 use DateInterval;
 use DateTimeInterface;
+use Sirius\Support\Carbon;
 
 trait InteractsWithTime
 {

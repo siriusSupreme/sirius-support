@@ -2,7 +2,8 @@
 
 namespace Sirius\Support;
 
-use Sirius\Support\Traits\Macroable;
+
+use Sirius\Macro\Traits\Macroable;
 
 class Str
 {

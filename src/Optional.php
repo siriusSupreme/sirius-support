@@ -2,9 +2,11 @@
 
 namespace Sirius\Support;
 
+use Sirius\Macro\Traits\Macroable;
+
 class Optional
 {
-    use Traits\Macroable {
+    use Macroable {
         __call as macroCall;
     }
 

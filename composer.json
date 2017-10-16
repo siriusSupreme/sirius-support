@@ -17,9 +17,10 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "symfony/var-dumper": "^3.3",
+    "doctrine/inflector": "^1.2",
     "nesbot/carbon": "^1.22",
-    "symfony/process": "^3.3"
+    "siriussupreme/sirius-macro": "^1.0",
+    "symfony/var-dumper": "^3.3"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.4"
@@ -48,7 +49,9 @@
     }
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
   },
   "scripts": {
     "pre-install-cmd": [],

@@ -4,7 +4,7 @@ namespace Sirius\Support;
 
 use JsonSerializable;
 use Carbon\Carbon as BaseCarbon;
-use Sirius\Support\Traits\Macroable;
+use Sirius\Macro\Traits\Macroable;
 
 class Carbon extends BaseCarbon implements JsonSerializable
 {

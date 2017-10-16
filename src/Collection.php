@@ -2,6 +2,7 @@
 
 namespace Sirius\Support;
 
+use Sirius\Macro\Traits\Macroable;
 use stdClass;
 use Countable;
 use Exception;
@@ -12,7 +13,6 @@ use CachingIterator;
 use JsonSerializable;
 use IteratorAggregate;
 use Sirius\Support\Debug\Dumper;
-use Sirius\Support\Traits\Macroable;
 use Sirius\Support\Contracts\Jsonable;
 use Sirius\Support\Contracts\Arrayable;
 

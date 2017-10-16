@@ -4,7 +4,7 @@ namespace Sirius\Support;
 
 use ArrayAccess;
 use InvalidArgumentException;
-use Sirius\Support\Traits\Macroable;
+use Sirius\Macro\Traits\Macroable;
 
 class Arr
 {
