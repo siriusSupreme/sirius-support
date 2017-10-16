@@ -1,4 +1,5 @@
 <?php
+namespace Sirius\Support;
 
 use Sirius\Support\Arr;
 use Sirius\Support\Str;
