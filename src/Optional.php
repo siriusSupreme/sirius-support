@@ -21,7 +21,6 @@ class Optional
      * Create a new optional instance.
      *
      * @param  mixed  $value
-     * @return void
      */
     public function __construct($value)
     {

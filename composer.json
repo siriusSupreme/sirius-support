@@ -17,6 +17,7 @@
   ],
   "require": {
     "php": ">=7.0.0",
+    "ext-mbstring": "*",
     "doctrine/inflector": "^1.2",
     "nesbot/carbon": "^1.22",
     "siriussupreme/sirius-macro": "^1.0",

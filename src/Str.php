@@ -3,6 +3,7 @@
 namespace Sirius\Support;
 
 
+
 use Sirius\Macro\Traits\Macroable;
 
 class Str
