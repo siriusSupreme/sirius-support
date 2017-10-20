@@ -140,7 +140,7 @@ if (! function_exists('\Sirius\Support\array_forget')) {
      */
     function array_forget(&$array, $keys)
     {
-        return Arr::forget($array, $keys);
+        Arr::forget($array, $keys);
     }
 }
 
@@ -353,7 +353,7 @@ if (! function_exists('\Sirius\Support\blank')) {
             return false;
         }
 
-        if ($value instanceof Countable) {
+        if ($value instanceof \Countable) {
             return count($value) === 0;
         }
 
@@ -761,7 +761,7 @@ if (! function_exists('\Sirius\Support\retry')) {
         beginning:
         try {
             return $callback();
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             if (! $times) {
                 throw $e;
             }
@@ -1046,7 +1046,9 @@ if (! function_exists('\Sirius\Support\throw_if')) {
      * @param  bool  $boolean
      * @param  \Throwable|string  $exception
      * @param  array  ...$parameters
+     *
      * @return void
+     * @throws
      */
     function throw_if($boolean, $exception, ...$parameters)
     {
@@ -1064,6 +1066,7 @@ if (! function_exists('\Sirius\Support\throw_unless')) {
      * @param  \Throwable|string  $exception
      * @param  array  ...$parameters
      * @return void
+     * @throws
      */
     function throw_unless($boolean, $exception, ...$parameters)
     {
@@ -1137,7 +1140,7 @@ if (! function_exists('\Sirius\Support\value')) {
      */
     function value($value)
     {
-        return $value instanceof Closure ? $value() : $value;
+        return $value instanceof \Closure ? $value() : $value;
     }
 }
 
