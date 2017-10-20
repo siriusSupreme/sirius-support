@@ -20,7 +20,6 @@ class Fluent implements ArrayAccess, Arrayable, Jsonable, JsonSerializable
      * Create a new fluent container instance.
      *
      * @param  array|object    $attributes
-     * @return void
      */
     public function __construct($attributes = [])
     {

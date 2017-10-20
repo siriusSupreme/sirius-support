@@ -26,7 +26,6 @@ class HigherOrderCollectionProxy
      *
      * @param  \Sirius\Support\Collection  $collection
      * @param  string  $method
-     * @return void
      */
     public function __construct(Collection $collection, $method)
     {
