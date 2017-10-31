@@ -2,6 +2,7 @@
 namespace Sirius\Support\Traits;
 
 use Sirius\Support\Repository;
+use Sirius\Support\Contracts\Repository as RepostoryContract;
 
 /**
  * @internal
@@ -61,7 +62,7 @@ trait InteractsWithConfig
       return new Repository();
     }
 
-    if ( $repository instanceof Repository ) {
+    if ( $repository instanceof RepostoryContract ) {
       return $repository;
     }
 
